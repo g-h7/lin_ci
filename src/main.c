@@ -131,7 +131,8 @@ int main(int argc, char **argv) {
             if (result != E_SUCCESS) {
                 perror(parse_error(result));
             } else {
-                printf("Dates: %d/%d/%d %d:%d - %d/%d/%d %d:%d\n", min.date.day, min.date.month, min.date.year, min.time.hour, min.time.minutes, max.date.day, max.date.month, max.date.year, max.time.hour, max.time.minutes);
+                printf("Dates: %d/%d/%d %d:%d - %d/%d/%d %d:%d\n", min.date.day, min.date.month, min.date.year, min.time.hour, 
+                    min.time.minutes, max.date.day, max.date.month, max.date.year, max.time.hour, max.time.minutes);
             } 
         } else {
             printf("Unknown command\n");
