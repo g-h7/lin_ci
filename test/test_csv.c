@@ -16,7 +16,7 @@ void test_read_csv_file(void) {
     tApiError error = csv_read(csv, "example_1.csv", ',');
     TEST_ASSERT_EQUAL(E_SUCCESS, error);
 
-    TEST_ASSERT_EQUAL(2, csv->row_count);
+    TEST_ASSERT_EQUAL(4, csv->row_count);
     TEST_ASSERT_EQUAL(7, csv->header_count);
     TEST_ASSERT_EQUAL(0, csv_get_column_index(csv, "name"));
     TEST_ASSERT_EQUAL(1, csv_get_column_index(csv, "surname"));
